@@ -1,5 +1,6 @@
 {
   "name": "online-cv",
+  "homepage": "https://www.anythingmaths.com/online-cv",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

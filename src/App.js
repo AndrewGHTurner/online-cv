@@ -15,37 +15,16 @@ const contactDetails = {
 
 const personalStatement = {
   title: "Personal Statement",
-  content: "Motivated software engineer holding an MSc in Advanced Software Engineering at King’s College London, where I studied topics including technology in financial systems and security. I also have prior industry experience as a Graduate Software Engineer at Forsberg Services Ltd. There, I contributed to full-stack development using C++, TypeScript, and Vue 3 in an agile team environment. I bring strong problem-solving ability, adaptability across technologies, and motivation to contribute to creating maintainable, high-quality software. Immediately available for software engineer roles in London."
+  content: "Motivated software engineer holding an MSc in Advanced Software Engineering at King’s College London, where I studied topics including technology in financial systems and security and test driven development. I also have prior industry experience as a Graduate Software Engineer at Forsberg Services Ltd. There, I contributed to full-stack development using C++, TypeScript, and Vue 3 in an agile team environment. I bring strong problem-solving ability, adaptability across technologies, and motivation to contribute to creating maintainable, high-quality software. Immediately available for software engineer roles in London."
 }
 
 const technicalSkills = {
-  title: "Technical Skills",
-  content: ["Professional version control experience using git and GitHub.",
-    "Front end development experience using Vue 3, Electron js, TypeScript, SCSS, and Bootstrap among other technologies.",
-    ["C++ development experience including:\nDeveloped modular C++ applications on Windows by creating custom dynamic-link libraries (DLLs) to separate reusable components.", "Utilised Doxygen to generate clear and maintainable API documentation.", "Managed multi-project solutions in Microsoft Visual Studio integrating shared libraries and ensuring smooth builds."],
-    "Familiarity with SQL and database normalization principles",
-    "Experience with Python at Forsberg Services, within dissertation project, and other personal projects.",
-    "Familiarity with using CSS libraries Bootstrap 5 and Tailwind CSS to create consistent user interfaces.",
-    "String knowledge of data structures and algorithms.",
-    "Familiarity with Test Driven Development(TDD)"]
-}
-
-const Projects = {
-  title: "Projects",
-  content: ["Lightweight, data-driven, retained-mode, and extensible UI library (C++17, SFML)",
-    ["Designed and implemented a modular UI library demonstrating clean architectural design and robust event handling.",
-      "Developed user friendly APIs using the facade, fluent, and builder patterns to accelerate UI development.",
-      "Ensured memory safety through the use of standard library smart pointers.",
-      "Implemented change notification propagation, via the observer pattern, up the UI hierarchy to efficiently manage redraws and state updates.",
-      "Optimized memory and performance: minimized UI tree node size using bit flags and designed a dirty-flag system to reduce re-computation to the minimal necessary."],
-    "Multi-page revision system written in Python using the QT UI library and SQLite.",
-    ["Allows users to create lists of questions and their answers.",
-      "Lists of lists can be made allowing for general or more targeted revision.",
-      "System for recording progress and asking the user questions they are more likely to need to revise.",
-      "All data stored within an SQLite database"],
-    "MSc dissertation project exploring algorithms for discrete action planning using state roadmaps.",
-    ["Graphical application developed in Python with PyGame to allow for visualisation of the developed algorithms. Visualisation allowed for fast debugging, iteration and ease of intuition for how the algorithms behaved.",
-      "Developed five new algorithms"]]
+  title: "Other Technical Skills",
+  content: ["Test Driven Development (TDD) experience gained through MSc modules and personal projects, using frameworks such as Junit and MSTest.",
+    "Knowledge of SQL and database normalisation principles, gained through academic projects and personal study.",
+    "Strong understanding of data structures and algorithms, including time and space complexity analysis.",
+    "SOLID principles and design patterns applied in various projects to create maintainable and scalable codebases."
+  ]
 }
 
 const nonTechnicalSkills = {
@@ -53,21 +32,6 @@ const nonTechnicalSkills = {
   content: ["Professional Agile team working experience as a Graduate Software Engineer at Forsberg Services Ltd.",
     "Proactive learner who is self motivated to improve skills and always open to learning new technologies.",
     "Collaborated in non-technical team environments, such as the housekeeping team at Capernwray College, developing strong communication and teamwork skills."]
-}
-
-const workingExperience = {
-  title: "Work Experience",
-  content: ["Capernwray Hall (volunteer) August 5 2024– September 10 2024\n",
-    ["Provided a friendly face in welcoming guests and responding to ad hoc guest queries.",
-      "Worked in a team to maintain public spaces and rooms to ensure that the guests had everything they needed to enjoy their stay."],
-    "Forsberg Services Ltd December 1 2023—April 28 2024\n",
-    ["Full time Graduate Software Engineer working mainly in Vue 3, Typescript, and C++.",
-      "Actively contributed to large-scale commercial projects, demonstrating a professional aptitude for collaborative software development.",
-      "Created high quality user interfaces using Typescript, Vue 3, SCSS, and Bootstrap.",
-      "Contributed to adding features to C++ backend."],
-    "Big Bears Pizza February 2023 – November 2023\n",
-    ["Strong multi-tasking skills in preparing fresh high quality pizzas ensuring consistency in taste and presentation in a fast paced environment.",
-      "Worked closely in a small team ensuring I followed strict food hygiene standards and maintaining a clean and organised workplace."]]
 }
 
 const intrests = {
@@ -106,7 +70,7 @@ function App() {
 
               <div>
                 <h3 className="font-semibold text-sky-900 dark:text-sky-500 text-opacity-80 font">Styling</h3>
-                <p className="text-xl font-bold">CSS, Tailwind CSS, Bootstrap</p>
+                <p className="text-xl font-bold">CSS, Tailwind, Bootstrap</p>
               </div>
             </div>
             <hr className='m-2 border-sky-900'></hr>
@@ -133,22 +97,22 @@ function App() {
           <div className="section">
             <h2 className="title">Education</h2>
             <div className="space-y-4">
-              <div className="p-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
-                                <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="p-4 rounded-lg shadow-sm dark:shadow-yellow-200 bg-sky-50 dark:bg-sky-950">
+                <div className="grid grid-cols-1 md:grid-cols-2">
                   <div>
                     <p className="text-lg font-bold">King's College London</p>
                     <p className="text-sm text-gray-700 dark:text-gray-300">MSc Advanced Software Engineering</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">2024 - 2025</p>
-                    </div>
-                    <img
-                      src={kingsLogo}
-                      alt="King's College London Logo"
-                      className="w-32 h-auto mt-2 rounded-lg md:mt-4"
-                    />
-                    </div>
+                  </div>
+                  <img
+                    src={kingsLogo}
+                    alt="King's College London Logo"
+                    className="w-32 h-auto mt-2 rounded-lg md:mt-4"
+                  />
+                </div>
 
               </div>
-              <div className="p-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+              <div className="p-4 rounded-lg shadow-sm dark:shadow-yellow-200 bg-sky-50 dark:bg-sky-950">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   <div>
                     <p className="text-lg font-bold">Lancaster University</p>
@@ -160,22 +124,115 @@ function App() {
                     alt="Lancaster University Logo"
                     className="h-20 mt-2 bg-blue-100 rounded-lg md:mt-4 dark:bg-sky-900"
                   />
-                  </div>
+                </div>
               </div>
             </div>
           </div>
+          {/* Past Experience in tech*/}
+          <div className="section">
+            <p className="title">Previous Experience in Tech</p>
+            <div className="text-md">
+              <p>Forsberg Services Ltd (now Teleplan Forsberg)</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">Graduate Software Engineer </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">December 2023 - April 2024</p>
+              <p className="p-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+                Worked within an Agile software team primarily using Vue 3 with Typescript and C++. Liased with project manager to turn figma
+                designs into high quality user interfaces. Contributed to backend C++ codebase adding new features and fixing bugs. Generated testing data using Python scripts.
+              </p>
+              <p className="title">Skills used:</p>
+              <ul className="skills">
+                <li>TypeScript</li>
+                <li>Vue 3</li>
+                <li>ScSS</li>
+                <li>Bootstrap 5</li>
+                <li>C++</li>
+                <li>git</li>
+                <li>Agile Methodologies</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+          {/* projects */}
+          <div className="section">
+            <p className="title">Projects</p>
+            <div className="p-2 m-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+              <p className="title">C++ UI library</p>
+              <p>Lightweight, retained-mode, and extensible UI library (C++17, SFML). Designed with an extensible architecture and a fluent API
+                for faster UI development. Contains various layout and widgets such as button, checkboxes and textboxes. Thought was given to memory layout, object size and scalability. For example, centralised event dispatch allows every UI tree node to have any type of interractivity without increasing object instance size by mapping node IDs to callbacks if they exist. </p>
+              <p className="title">Skills used:</p>
+              <ul className="skills">
+                <li>C++17 + STL</li>
+                <li>Design Patterns</li>
+                <li>OOP</li>
+                <li>DLL creation</li>
+                <li>Visual Studio 2022</li>
+                <li>Fluent API design</li>
+                <li>Smart Pointers/memory management</li>
+                <li>Doxygen</li>
+                <li>Data Structures and Algorithms</li>
+              </ul>
+            </div>
+
+
+
+            <div className="p-2 m-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+              <p className="title">MSc dissertation</p>
+              <p>Conducted in the area of AI research. I developed novel methods to improve performance of discrete action planning with state roadmaps by leveraging domain spcific heuristics to prevent overcommitment to roadmap states. This project required independent work and problem solving. For example, I developed a scalable planner algorithm visualisation tool in Python that fascilitated quick debugging and fast prototyping. Visualisation is also invaluable for convaying how an algorithm behaves and providing intuition. </p>
+              <p className="title">Skills used:</p>
+              <ul className="skills">
+                <li>Python</li>
+                <li>Software Architecture</li>
+                <li>Algorithm Design</li>
+              </ul>
+            </div>
+
+
+
+            <div className="p-2 m-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+              <p className="title">Revision System</p>
+              <p>Multi-page CRUD revision system written in Python using the QT UI library and SQLite. Users can create lists of questions and sublists for targeted revision (question lists make a tree structure). For revision it acts as a flashcard system and records the user's "streak" for correct answers to prioritise how soon questions should be asked again. </p>
+              <p>This is a program I have iterated on many times as, given I know the structure and design, it is a nice project for learning knew frameworks. For example, I have implemented versions of this application using C++, JavaScript, MySql and my own C++ UI library.</p>
+              <p className="title">Skills used:</p>
+              <ul className="skills">
+                <li>Python</li>
+                <li>SQLite</li>
+                <li>QT</li>
+                <li>SQL</li>
+                <li>Database Design</li>
+              </ul>
+            </div>
+
+          </div>
+
+
+
+          {/* non-tech and volunteer experience */}
+          <div className="section">
+            <p className="title">Non-tech and volunteer experience</p>
+            <div  className="p-2 m-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+              <p className="title">Big Bears Pizza - Pizza Maker</p>
+              <p>
+                Worked closely in a small team ensuring I followed strict food hygiene standards and maintaining a clean and organised workplace.
+              </p>
+            </div>
+            <div  className="p-2 m-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+              <p className="title">Capernwray Hall - Volunteer house keeping</p>
+              <p>
+                Provided a friendly face in welcoming guests and responding to ad hoc guest queries. Worked in a team to maintain public spaces and rooms to ensure that the guests had everything they needed to enjoy their stay.
+              </p>
+            </div>
+            <div  className="p-2 m-4 rounded-lg shadow-md bg-sky-50 dark:bg-sky-950">
+              <p className="title">Charity shop Volunteer - Back of House Sorter</p>
+              <p>
+                Sorted donated items including clothes, books, and bric-a-brac to ensure that only high-quality items were placed on the shop floor for sale. Worked as part of a team to maintain a clean and organised back of house area. I have volunteered at Age UK and Age Concern charity shops.
+              </p>
+            </div>
+          </div>
           <Section {...technicalSkills} />
-          <Section {...Projects} />
           <Section {...nonTechnicalSkills} />
-          <Section {...workingExperience} />
           <Section {...intrests} />
         </div>
-        <a
-          href={`mailto:${contactDetails.email}`}
-          className="inline-block px-4 py-2 text-white transition bg-indigo-600 rounded-lg hover:bg-indigo-700"
-        >
-          Email Me
-        </a>
+
       </div>
     </div >
   );

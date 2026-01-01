@@ -9,6 +9,9 @@
   .title {
     @apply mb-2 text-lg font-semibold tracking-tight;
   }
+  .skills{
+    @apply grid grid-cols-2 gap-2 text-sm font-bold text-gray-700 list-inside sm:text-2xl md:grid-cols-3 dark:text-gray-300;
+  }
 }
 
 .App {
